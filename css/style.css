@@ -1,0 +1,185 @@
+/* Navigation styles */
+.logo {
+  height: 230px;
+  background-image: url("../images/jakes-logo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.nav {
+  display: flex;
+  background-color: black;
+  padding: 20px;
+  height: 50px;
+  justify-content: space-around;
+}
+
+.right
+{
+  float: right;
+}
+
+.left, .right {
+  width: 25%;
+}
+.center {
+  width: 50%;
+}
+
+.center a {
+  color: white;
+  padding: 10px;
+  font-size: 18px;
+  text-decoration: none;
+  font-family:arial;
+}
+
+.right button {
+  background-color: yellow;
+  color:black;
+  font-size: 16px;
+  padding: 15px;
+  width: auto;
+}
+
+.left button {
+  background-color: skyblue;
+  color:black;
+  font-size: 16px;
+  padding: 15px;
+  width: auto;
+}
+
+/* Column styles */
+.section
+{
+  margin: 40px;
+  height: auto;
+}
+.section h1
+{
+text-align: center;
+}
+
+.section h5
+{
+margin-left: 30px;
+}
+.column {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+ margin-bottom: 20px;
+}
+
+.meal1,.meal2,.meal3
+{
+  border: 2px solid black;
+  text-align: center;
+  margin-left: 20px;
+  background-color: azure;
+  border-radius: 10px 10px;
+  margin-bottom: 20px;
+
+}
+.column img
+{
+  width:80%;
+}
+.text p {
+  color: rgba(13, 10, 10, 1);
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: left;
+  padding: 20px;
+}
+.text h1 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: clamp(16px, 4vw, 24px);
+}
+
+.next-section
+{
+  margin-left: 40px;
+}
+
+.next-section h5
+{
+  margin-left: 0px;
+}
+
+@media (max-width: 1000px){
+  .column
+  {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+  }
+}
+
+@media (max-width: 800px){
+
+  .center
+  {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    top: 328px;
+    background-color: #3b3535;
+    height: 50%;
+    width: 95%;
+    left: 16px;
+    text-align: center;
+
+  }
+  .column
+  {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+  }
+}
+
+.button
+{
+  background-color: red;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 10px 10px;
+  color: white;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+.buttons
+{
+  display: flex;
+  justify-content:flex-start;
+  flex-wrap: wrap;
+}
+
+
+/* Footer Styles */
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: black;
+  height: 100px;
+}
+
+.footer a {
+  padding: 20px 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+}
+
+.ig {
+  color: red;
+}
+
+.fb {
+  color:skyblue;
+}
+
+.tw {
+  color: yellow;
+}
+
+
